@@ -4,10 +4,10 @@ Variables
   i entier
   trouve boolean
 Début
-  trouve <- 0
+  trouve <- 0 (False)
   Pour i <- 0 a longueur(l)
     Si l[i] = element Alors
-      trouve <- 1
+      trouve <- 1 (True)
     FinSi
   i Suivant
   retourne trouve
@@ -17,30 +17,22 @@ Fin
 
 
 
-
-
-
-
-
-
-
-
 # V2 - RECHERCHER ET REMPLACER UNE VALEUR DANS UNE LISTE
 Fonction remplace (entier recherhe, entier remplacant, list l): list
 Variables
-  i, index entier
+  i, indexTrouve entier
   trouve boolean
 Début
   trouve <- 0
-  index <- 0
+  indexTrouve <- 0
   Pour i <- 0 a longueur(l)
     Si l[i] = element Alors
       trouve <- 1
-      index <- i
+      indexTrouve <- i
     FinSi
   i Suivant
   Si trouve Alors
-    l[index] <- remplacant
+    l[indexTrouve] <- remplacant
   FinSi
   retourne l
 Fin
