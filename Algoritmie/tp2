@@ -1,0 +1,38 @@
+Variables
+  a,b,c,result entier
+Début
+  a,b,c,result <- 0
+  Ecrire "Entrez une note"
+  Saisir a
+  Ecrire "Entrez une note"
+  Saisir b
+  Ecrire "Entrez une note"
+  Saisir c
+  Lire a,b,c
+  result <- (a+b+c)/3
+  Ecrire "La moyenne de trois notes est " + result
+Fin
+
+
+
+Variables
+  a entier-chaine
+  result,nbNotes entier
+  continueSaisie boolean
+Début
+  a,result,nbNotes <- 0
+  continueSaisie <- 1
+  TantQue continueSaisie
+    Ecrire "Entrez une note"
+    Saisir a
+    Lire a
+    Si a <> "q" Alors
+      nbNotes <- nbNotes + 1
+      result <- result+a
+    Sinon Alors
+      continueSaisie <- 0
+    FinSi
+  FinTantQue
+  result <- result/nbNotes
+  Ecrire "La moyenne des notes est " + result
+Fin

@@ -1,0 +1,18 @@
+Variables
+  n entier
+Début
+  n <- 0
+  Ecrire "Entrez un nombre entre 10 et 20"
+  Saisir n
+  Lire n
+  TantQue n<10 ou n>20
+    Si n < 10 Alors
+      Ecrire "Plus grand !"
+    Sinon Alors
+      Ecrire "Plus petit !" => Plus petit
+    FinSi
+    Saisir n
+    Lire n
+  FinTantQue
+  Ecrire "Le nombre saisi est" + n
+Fin

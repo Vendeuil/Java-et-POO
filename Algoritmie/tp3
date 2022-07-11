@@ -1,0 +1,36 @@
+# V1 - RECHERCHER UNE VALEUR DANS UNE LISTE
+Fonction estPresent (entier element, list l): booleen
+Variables
+  i entier
+  trouve boolean
+Début
+  trouve <- 0
+  Pour i <- 0 longueur(l)
+    Si l[i] = element Alors
+      trouve <- 1
+    FinSi
+  i Suivant
+  retourne trouve
+Fin
+
+
+
+# V1 - RECHERCHER ET REMPLACER UNE VALEUR DANS UNE LISTE
+Fonction remplace (entier recherhe, entier remplacant, list l): list
+Variables
+  i, index entier
+  trouve boolean
+Début
+  trouve <- 0
+  index <- 0
+  Pour i <- 0 a longueur(l)
+    Si l[i] = element Alors
+      trouve <- 1
+      index <- i
+    FinSi
+  i Suivant
+  Si trouve Alors
+    l[index] <- remplacant
+  FinSi
+  retourne list
+Fin
