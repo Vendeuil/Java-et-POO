@@ -11,5 +11,4 @@ public class main {
 		natation.afficher();
 		tennis.afficher();
 	}
-
 }
