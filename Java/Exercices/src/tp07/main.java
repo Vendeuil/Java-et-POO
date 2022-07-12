@@ -39,14 +39,17 @@ public class main {
 		
 		// ---------------- V1 ----------------
 		String[] listSports = {foot.getNom(), natation.getNom(), tennis.getNom(), sportAjout.getNom()};
+		System.out.println("------------ VERSION 1 ------------");
 		for (String nomSport: listSports) {
 			System.out.println(nomSport);
 		}
 
 
+		
 		// ---------------- V2 ----------------
 		natation.setActif(false);
 		Sport[] listSports2 = {foot, natation, tennis, sportAjout};
+		System.out.println("------------ VERSION 2 ------------");
 		for (Sport sport: listSports2) {
 			if (sport.isActif())
 				System.out.println(sport.getNom());

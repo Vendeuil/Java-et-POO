@@ -27,6 +27,8 @@ public class exemple {
 		System.out.println(ecole2.getNbClasses());
 		ecole2.ajouter(3);
 		System.out.println(ecole2.getNbClasses());
+		
+		System.out.println(ecole3);
 	}
 
 }

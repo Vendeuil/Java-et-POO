@@ -25,6 +25,12 @@ public class Ecole {
 	public void ajouter(int nbClasseAAjouter) {
 		this.nbClasses += nbClasseAAjouter;
 	}
+	
+    @Override
+    public String toString() {
+        return this.nom + " a " + this.nbClasses + " classe(s)";
+    }
+	
 
 	// Getters / Setters
 	public String getNom() {
