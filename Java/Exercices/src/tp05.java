@@ -14,7 +14,7 @@ public class tp05 {
 		// Boucle pour jouer
 		while(readyToReplay) {
 
-			// Demander Ã  l'utilisateur l'intervalle + Control du min et max
+			// Demander à l'utilisateur l'intervalle + Control du min et max
 			while(min >= max) {
 				System.out.println("Quelle est l'intervalle minimum ?");
 				min = sc.nextInt();
@@ -25,11 +25,11 @@ public class tp05 {
 				}
 			}
 
-			// DÃ©claration du nombre alÃ©atoire
+			// Déclaration du nombre aléatoire
 			randomNum = min + (int)(Math.random() * ((max - min) + 1));
 			System.out.println(randomNum);
 
-			// Initialisation du choix utilsiateur pour entrer dans la boucle et dÃ©marrage
+			// Initialisation du choix utilsiateur pour entrer dans la boucle et démarrage
 			choiceNum = min - 1;
 			while(randomNum != choiceNum) {
 				trials++;
@@ -52,7 +52,7 @@ public class tp05 {
 			if(!replay.equals("y") && !replay.equals("Y")) {
 				readyToReplay = false;
 			} else {
-				// RÃ©initialisation des variables
+				// Réinitialisation des variables
 				trials = 0;
 				min = 0;
 				max = 0;
